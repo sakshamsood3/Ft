@@ -8,6 +8,7 @@ import Limits from "views/Limits"
 import Scan from "views/Scan";
 import Predictions from "views/Predictions"
 import Camera from "views/Camera";
+import NFC from "views/NFC"
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -47,22 +48,29 @@ const dashboardRoutes = [
   {
     path: "/limits",
     name: "Limits",
-    icon: "nc-icon nc-pin-3",
+    icon: "nc-icon nc-preferences-circle-rotate",
     component: Limits,
     layout: "/admin",
   },
   {
     path: "/predictions",
     name: "Predictions",
-    icon: "nc-icon nc-pin-3",
+    icon: "nc-icon nc-atom",
     component: Predictions,
     layout: "/admin",
   },
   {
     path: "/camera",
     name: "Camera",
-    icon: "nc-icon nc-pin-3",
+    icon: "nc-icon nc-camera-20",
     component: Camera,
+    layout: "/admin",
+  },
+  {
+    path: "/nfc",
+    name: "NFC",
+    icon: "nc-icon nc-cloud-upload-94",
+    component: NFC,
     layout: "/admin",
   },
   {
